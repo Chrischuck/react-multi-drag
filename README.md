@@ -1,6 +1,6 @@
 # react-multi-drag
 
-> 
+>
 
 [![NPM](https://img.shields.io/npm/v/react-multi-drag.svg)](https://www.npmjs.com/package/react-multi-drag) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
@@ -15,12 +15,17 @@ npm install --save react-multi-drag
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-multi-drag'
+import ReactMultiDrag from 'react-multi-drag'
 import 'react-multi-drag/dist/index.css'
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <ReactMultiDrag>
+        <div>You can drag me!!</div>
+        <div>You can drag me too!!</div>
+      </ReactMultiDrag>
+    )
   }
 }
 ```

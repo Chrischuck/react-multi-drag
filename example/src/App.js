@@ -1,10 +1,15 @@
 import React from 'react'
 
-import { ExampleComponent } from 'react-multi-drag'
+import ExampleComponent from 'react-multi-drag'
 import 'react-multi-drag/dist/index.css'
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
+  return (
+    <ExampleComponent>
+      <div>fooo</div>
+      <div>foooo2</div>
+    </ExampleComponent>
+  )
 }
 
 export default App
